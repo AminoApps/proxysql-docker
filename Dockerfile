@@ -5,7 +5,7 @@ RUN yum install wget -y
 RUN yum install perl "perl(DBD::mysql)" "perl(DBI)" -y
 
 
-RUN wget https://github.com/sysown/proxysql/releases/download/v2.0.4/proxysql-2.0.4-1-centos7.x86_64.rpm
+RUN wget https://github.com/sysown/proxysql/releases/download/v2.0.5/proxysql-2.0.5-1-centos7.x86_64.rpm
 RUN rpm -i proxysql-*.rpm
 
 RUN mkdir -p /var/lib/proxysql
